@@ -1,5 +1,5 @@
 const urlParams = new URLSearchParams(window.location.search);
-const category = urlParams.get("category");
+const category = urlParams.get("Type");
 console.log(category);
 
 // Fetch request til Supabase

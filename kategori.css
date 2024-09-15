@@ -225,21 +225,18 @@ margin-left: 50px;
 }
 
    
-     .card button {
-    background-color: #233249;
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
     color: white;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    width: 100%; 
-    margin-top: 0; 
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    background-color: #233249;
+    text-decoration: none;
+    text-align: center;
 }
 
-        .card button:hover {
-            background-color: #E782A9;
-        }
+.button-link:hover {
+    background-color: #0056b3;
+}
 
     }
