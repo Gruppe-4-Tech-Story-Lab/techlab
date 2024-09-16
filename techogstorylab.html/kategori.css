@@ -1,0 +1,285 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background-color: #233249;
+}
+
+/* MOBIL */
+@media (max-width: 600px) {
+  nav {
+    background-color: #233249;
+    padding: 20px;
+    text-align: end;
+  }
+
+  nav a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+  }
+
+  nav img {
+    width: 20%;
+  }
+
+  .header-tekst {
+    color: white;
+  }
+
+  header img {
+    display: block;
+    max-width: 400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header h1 {
+    font-size: 2.5rem; /* Mindre skriftstørrelse på mobil */
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+
+  header h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem; /* Mindre skriftstørrelse for mobil */
+  }
+
+  header p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ffffff;
+  }
+
+  header p,
+  h2,
+  h1 {
+    margin-left: 20px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr; /* Enkelt kolonne på mobil */
+    gap: 1rem;
+    margin-top: 20px;
+    justify-items: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .circle {
+    background-color: #e782a9;
+    border-radius: 50%;
+    width: 150px; /* Mindre cirkel på mobil */
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px; /* Plads mellem cirkel og tekst */
+  }
+
+  .circle img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .card h3 {
+    font-size: 1rem; /* Mindre skriftstørrelse for mobil */
+    margin: 10px 0;
+    color: #333;
+  }
+
+  .card button {
+    background-color: #233249;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border-radius: 50px;
+    margin-top: 10px;
+  }
+
+  .card button:hover {
+    background-color: #e782a9;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 600px) {
+  nav {
+    background-color: #233249;
+    padding: 20px;
+    text-align: end;
+  }
+
+  nav a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+  }
+
+  nav img {
+    display: flex;
+    width: 5%;
+    align-items: start;
+    padding: 0;
+  }
+
+  .headeropdeling {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-text {
+    color: #f8f8f8;
+  }
+
+  header img {
+    max-width: 400px;
+    height: auto;
+  }
+
+  header h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+
+  header h2 {
+    color: #ffffff;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #ffffff;
+  }
+
+  header p,
+  h2,
+  h1 {
+    margin-left: 50px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 3 kolonner på desktop */
+    gap: 2rem;
+    margin-top: 60px;
+    justify-items: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .circle {
+    background-color: #e782a9;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .circle img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333;
+  }
+
+  .card button {
+    background-color: #233249;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border-radius: 50px;
+    margin-top: 10px;
+  }
+
+  .card button:hover {
+    background-color: #e782a9;
+  }
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .categories {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .categories h2 {
+    margin-bottom: 1rem;
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .buttons button {
+    padding: 1.2rem;
+    background-color: #ea5045;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .buttons button:hover {
+    background-color: #c43d35;
+  }
+
+  .description {
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description p {
+    margin: 0;
+    font-style: italic;
+  }
+}
