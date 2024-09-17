@@ -1,0 +1,177 @@
+body {
+  box-sizing: border-box;
+}
+
+/*
+=============== 
+Variables
+===============
+*/
+:root {
+  --ff-primary: "Roboto", condensed;
+  --ff-secondary: "Roboto regular", regular;
+  --spacing: 0.25rem;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  font-family: var(--ff-primary);
+  color: black;
+  font-family: "Roboto Condensed", sans-serif;
+}
+h1 {
+  font-size: 4rem;
+  color: white;
+}
+h2 {
+  font-size: 1.8rem;
+  color: rgba(35, 50, 73, 1);
+}
+.underline h2 {
+  white-space: nowrap;
+}
+
+h3 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  color: rgba(35, 50, 73, 1);
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  letter-spacing: var(--spacing);
+  line-height: 1.25;
+  font-family: var(--ff-secondary);
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+}
+img {
+  display: block;
+  max-width: 65%;
+  height: auto;
+}
+.description {
+  font-weight: 400;
+  text-align: center;
+  padding: 20px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-top: 7rem;
+  background-color: rgba(231, 130, 169, 1);
+  margin-bottom: 1rem;
+  margin-left: 27px;
+}
+
+dt {
+  color: rgba(35, 50, 73, 1);
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+dd {
+  color: rgba(35, 50, 73, 1);
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+a {
+  margin-top: 2rem;
+  padding: 1px 1px 1px 1px;
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.button {
+  display: inline-block;
+  flex: 1;
+  max-width: 20%;
+  padding: 10px 15px;
+  background-color: rgba(35, 50, 73, 1);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 28px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+.button:hover {
+  background-color: rgba(231, 130, 169, 1);
+}
+button {
+  background-color: rgba(35, 50, 73, 1);
+  color: white;
+}
+button:hover {
+  background-color: rgba(231, 130, 169, 1);
+}
+.name {
+  font-size: 2.5rem;
+  /* text-align: center; */
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  color: rgba(35, 50, 73, 1);
+}
+.dynamicpics {
+  margin-top: 9rem;
+  margin-left: 7rem;
+}
+.info {
+  background-color: rgba(217, 217, 217, 1);
+}
+
+@media screen and (max-width: 1300px) {
+  .showproduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .productdescription {
+    order: 2;
+    margin-top: 2rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .button {
+    word-wrap: break-word;
+  }
+}
+/* Ensure the buttons stack on smaller screens */
+@media (max-width: 600px) {
+  .button {
+    flex: 1 0 100%; /* Buttons will take full width on small screens */
+    max-width: none; /* Remove max width on small screens */
+  }
+  .description {
+    margin-left: -5px;
+  }
+  .dynamicpics {
+    margin-left: 3rem;
+  }
+}
