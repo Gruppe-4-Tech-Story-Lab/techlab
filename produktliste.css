@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+.blaa {
+    background-color: #233249;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.text {
+    padding: 5%;
+}
+
+.pic {
+    margin-left: auto;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 96px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 40px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h4 {
+    font-size: 35px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #233249;
+    max-width: 50ch;
+    padding-left: 3%;
+    padding-top: 2%;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    margin: 3%;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.card {
+    flex: 0 0 25%;
+    text-align: center;
+    padding: 15px;
+    background-color: white;
+    margin: 0 30px ;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+h3 {
+    margin: 10px 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.more-btn {
+    background-color: #e65142;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.more-btn:hover {
+    background-color: #6b120c;
+}
+
+.carousel-btn {
+    background-color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px 14px 14px 14px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-btn:hover {
+    background-color: #c2c0c0;
+} 
