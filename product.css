@@ -1,0 +1,202 @@
+body {
+  box-sizing: border-box;
+}
+
+/*
+=============== 
+Variables
+===============
+*/
+:root {
+  --ff-primary: "Roboto", condensed;
+  --ff-secondary: "Roboto regular", regular;
+  --spacing: 0.25rem;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  font-family: var(--ff-primary);
+  color: black;
+  font-family: Roboto condensed;
+}
+h1 {
+  font-size: 4rem;
+  color: white;
+}
+h2 {
+  font-size: 1.8rem;
+  color: rgba(35, 50, 73, 1);
+}
+.underline h2 {
+  white-space: nowrap;
+}
+
+h3 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  color: rgba(35, 50, 73, 1);
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  letter-spacing: var(--spacing);
+  line-height: 1.25;
+  font-family: var(--ff-secondary);
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+}
+img {
+  display: block;
+  max-width: 65%;
+  height: auto;
+}
+
+dt {
+  color: rgba(35, 50, 73, 1); /* Set text color */
+  font-family: Arial, sans-serif; /* Set font family */
+  font-size: 20px; /* Set font size */
+  font-weight: bold; /* Make the font bold */
+  margin-bottom: 5px; /* Add spacing between terms and descriptions */
+}
+
+dd {
+  color: rgba(35, 50, 73, 1); /* Set text color */
+  font-family: "Georgia", serif; /* Set font family */
+  font-size: 18px; /* Set font size */
+  margin-left: 20px; /* Indent the description for better readability */
+  margin-bottom: 10px; /* Add spacing after each description */
+}
+/* .showproduct {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+} */
+.productdescription {
+  background-color: rgba(231, 130, 169, 1);
+  /* Ensures padding does not affect width/height */
+}
+.showproduct {
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.productdescription {
+  background-color: rgba(231, 130, 169, 1); /* The background color you want */
+  width: 100%; /* Make it take full width */
+  height: 50vh; /* Half of the viewport height */
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding is included in the height/width calculation */
+}
+
+.productimage {
+  width: 100%; /* Make sure it takes full width */
+  height: 50vh; /* The other half of the viewport */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.productdescription,
+.productimage {
+  margin-top: 10rem;
+}
+.productdescription {
+  padding: 2rem 2rem 2rem 2rem;
+}
+.productimage {
+  padding-left: 15rem;
+}
+a {
+  margin-top: 2rem;
+  padding: 1px 1px 1px 1px;
+  color: white;
+}
+.specs {
+  /* font-family: Arial, sans-serif; */
+  margin-top: 20px;
+  font-family: var(--ff-secondary);
+}
+.specs .points {
+  color: black;
+  margin-bottom: 10px; /* Changes the color to blue */
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Add a gap between the buttons */
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  flex: 1; /* Make the buttons take equal width */
+  max-width: 20%; /* Set maximum width */
+  padding: 10px 15px; /* Adjust padding */
+  background-color: rgba(35, 50, 73, 1);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 28px; /* Add some space between buttons */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  word-wrap: break-word;
+}
+
+.button:hover {
+  background-color: rgba(231, 130, 169, 1);
+}
+button {
+  background-color: rgba(35, 50, 73, 1);
+  color: white;
+}
+button:hover {
+  background-color: rgba(231, 130, 169, 1);
+}
+.name {
+  font-size: 2.5rem;
+  /* text-align: center; */
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  color: rgba(35, 50, 73, 1);
+}
+.dynamicpics {
+  margin-top: 9rem;
+  margin-left: 7rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .showproduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .productdescription {
+    order: 2;
+    margin-top: 2rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .button {
+    word-wrap: break-word;
+  }
+}
+/* Ensure the buttons stack on smaller screens */
+@media (max-width: 600px) {
+  .button {
+    flex: 1 0 100%; /* Buttons will take full width on small screens */
+    max-width: none; /* Remove max width on small screens */
+  }
+}
