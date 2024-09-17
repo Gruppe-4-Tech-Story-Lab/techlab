@@ -3,127 +3,142 @@
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
-            color: #333;
+                background-color: white;
         }
 
     header {
-    background-color: #D9D9D9;
+    background-color: #233249;
     
 }
 
 @media(max-width: 600px) {
 
-/** MOBIL **/
+    /** MOBIL **/
 
-nav {
-    background-color: #233249;
-    padding: 20px;
-     text-align: end;
-    
-}
+    nav {
+        background-color: #233249;
+        padding: 20px;
+        text-align: end;
+    }
 
-nav a {
-    color: white;
-    margin-right: 20px;
-    text-decoration: none;
-   
-    
-}
+    nav a {
+        color: white;
+        margin-right: 20px;
+        text-decoration: none;
+    }
 
-nav img {
+    nav img {
+        display: flex;
+        width: 5%;
+        align-items: start;
+        padding: 0;
+    }
 
-    width: 20%;
-}
+    .headeropdeling {
+        display: flex;
+        flex-direction: column; /* Ændret til kolonne-layout */
+        align-items: center; /* Centrerer indholdet horisontalt */
+    }
 
-.header-tekst {
-    color: #233249;
-}
+    .header-text {
+        color: #233249;
+        text-align: center; /* Centrerer teksten */
+    }
 
-header img {
-    display: block;
-    max-width: 400px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto; 
-}
+    header img {
+        max-width: 100%; /* Gør billedet responsivt */
+        height: auto;
+        margin-top: 20px; /* Tilføj margin for at sikre plads mellem teksten og billedet */
+    }
 
-header h1 {
-    font-size: 5rem;
-    margin-bottom: 1rem;
-    color: #233249;
-}
+    header h1 {
+        font-size: 5rem;
+        margin-bottom: 1rem;
+        color: white;
+    }
 
-header h2 {
-    color: #233249;
-}
+    .card-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centrerer overskriften og kortet horisontalt */
+        margin-bottom: 20px; /* Juster pladsen mellem kortene, hvis nødvendigt */
+    }
 
-header p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    color: #233249;
-}
+    .card-title {
+        font-size: 1.3rem;
+        margin-bottom: 10px; /* Juster afstanden mellem overskriften og kortet */
+        color: #233249;
+        border-radius: 8px; /* Tilføj hjørnernes afrunding, hvis ønskes */
+        text-align: center; /* Sørg for at teksten er centreret */
+    }
 
-header p, h2, h1 {
-margin-left: 20px;
+    header p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
 
-}
+    header p, h2, h1 {
+        margin-left: 50px;
+        color: white;
+    }
 
+    .tech {
+        margin-left: 50px;
+        max-width: 300px;
+        width: 300px;
+    }
 
-       .container {
-    display: grid;
-    grid-template-columns: 1fr; 
-    gap: 2rem;
-    margin-top: 20px;
-    justify-items: center; 
-}
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Ændret til en kolonne-layout på mobil */
+        gap: 2rem;
+        margin-top: 20px;
+        justify-items: center;
+    }
 
     .card {
-    background-color: #EA5045;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 350px;
-    min-height: 300px;
-    text-align: center;
-}
-
-        .card img {
-            max-width: 100%;
-            height: auto;
-            margin: 0 auto;
-        }
-
-       .card h3 {
-    font-size: 1.2rem;
-    margin: 0; 
-    background-color: #E782A9;
-    color: white;
-    width: 100%; 
-    padding: 1rem; 
-    box-sizing: border-box; 
-}
-
-   
-     .card button {
-    background-color: #233249;
-    color: white;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    width: 100%; 
-    margin-top: 0; 
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-        .card button:hover {
-            background-color: #E782A9;
-        }
-
+        background-color: #E782A9;
+        border-radius: 50%; /* Cirkulær form */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centrerer indholdet vertikalt */
+        align-items: center; /* Centrerer indholdet horisontalt */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 250px;
+        height: 250px; /* Ens størrelse for cirkulær form */
+        text-align: center;
+        overflow: hidden; /* Sørger for, at billedet ikke går uden for kortet */
     }
+
+    .card img {
+        max-width: 100%;
+        max-height: 100%; /* Sikrer at billedet ikke overskrider card */
+        margin: 0; /* Fjern margin */
+    }
+
+    .card h3 {
+        font-size: 1.2rem;
+        margin: 0; 
+        background-color: #E782A9;
+        color: white;
+        width: 100%; 
+        box-sizing: border-box; 
+    }
+
+    .button-link {
+        display: inline-block;
+        font-size: 16px;
+        color: #233249; /* Ændrer tekstfarven */
+        background-color: transparent; /* Ingen baggrundsfarve */
+        text-decoration: none;
+        text-align: center;
+        margin-top: 20px; /* Juster denne værdi for at sikre ensartet afstand */
+    }
+
+    .button-link:hover {
+        color: #0056b3; /* Ændrer farve ved hover, hvis ønskes */
+    }
+}
 
 /***DESKTOP ***/
 
@@ -132,9 +147,7 @@ margin-left: 20px;
 nav {
     background-color: #233249;
     padding: 20px;
-     text-align: end;
-     
-    
+    text-align: end;
 }
 
 nav a {
@@ -150,14 +163,13 @@ nav img  {
     padding: 0;
 }
 
-
 .headeropdeling {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
 }
 
-.header-text {
+.header-tekst {
     color: #233249;
 }
 
@@ -169,74 +181,92 @@ header img {
 header h1 {
     font-size: 5rem;
     margin-bottom: 1rem;
-    color: #233249;
+    color: white;
 }
 
-header h2 {
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the header and card horizontally */
+    margin-bottom: 20px; /* Adjust the space between the cards if needed */
+   
+}
+
+.card-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px; /* Adjust the distance between the title and card */
     color: #233249;
+    border-radius: 8px; /* Add rounded corners if desired */
+    text-align: center; /* Ensure the text is centered */
 }
 
 header p {
     font-size: 1.2rem;
     line-height: 1.5;
-    color: #233249;
 }
 
-header p, h2, h1 {
-margin-left: 50px;
-
+header p, h2, h1 img {
+    margin-left: 50px;
+    color: white;
 }
 
-     
-       .container {
+.tech {
+    margin-left: 50px;
+    max-width: 600px;
+    width: 100%; /* Set width to 100% to be responsive */
+}
+
+.container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); 
-    gap: 2rem;
-    margin-top: 20px;
-    justify-items: center; 
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    gap: 2rem; /* Space between cards */
+    margin-top: 40px;
+    padding: 0 100px; /* Add padding to ensure cards don't touch the edges */
+    margin-right: 40px;
 }
 
-    .card {
-    background-color: #EA5045;
-    border-radius: 8px;
+.card {
+    background-color: #E782A9;
+    border-radius: 50%; /* Circular shape */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    min-height: 300px;
+    width: 200px; /* Adjust width to make the cards smaller */
+    height: 200px; /* Adjust height to match the width */
     text-align: center;
+    overflow: hidden; /* Prevents image from overflowing the card */
 }
 
-        .card img {
-            max-width: 100%;
-            height: auto;
-            margin: 0 auto;
-        }
+.card img {
+    max-width: 100%;
+    max-height: 100%; /* Ensure image does not exceed card size */
+    margin: 0; /* Remove margin */
+}
 
-       .card h3 {
+.card h3 {
     font-size: 1.2rem;
     margin: 0; 
     background-color: #E782A9;
     color: white;
     width: 100%; 
-    padding: 1rem; 
     box-sizing: border-box; 
 }
 
-   
 .button-link {
     display: inline-block;
-    padding: 10px 20px;
     font-size: 16px;
-    color: white;
-    background-color: #233249;
+    color: #233249; /* Change text color */
+    background-color: transparent; /* No background color */
     text-decoration: none;
     text-align: center;
+    margin-top: 20px; /* Adjust this value to ensure consistent spacing */
 }
 
 .button-link:hover {
-    background-color: #0056b3;
+    color: #0056b3; /* Change color on hover if desired */
+}
 }
 
-    }
