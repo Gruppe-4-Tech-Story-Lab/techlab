@@ -63,94 +63,60 @@ img {
   max-width: 65%;
   height: auto;
 }
+.description {
+  font-weight: 400;
+  text-align: center;
+  padding: 20px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-top: 7rem;
+  background-color: rgba(231, 130, 169, 1);
+  margin-bottom: 1rem;
+  margin-left: 27px;
+}
 
 dt {
-  color: rgba(35, 50, 73, 1); /* Set text color */
-  font-family: Arial, sans-serif; /* Set font family */
-  font-size: 20px; /* Set font size */
-  font-weight: bold; /* Make the font bold */
-  margin-bottom: 5px; /* Add spacing between terms and descriptions */
+  color: rgba(35, 50, 73, 1);
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 dd {
-  color: rgba(35, 50, 73, 1); /* Set text color */
-  font-family: "Georgia", serif; /* Set font family */
-  font-size: 18px; /* Set font size */
-  margin-left: 20px; /* Indent the description for better readability */
-  margin-bottom: 10px; /* Add spacing after each description */
-}
-/* .showproduct {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-} */
-.productdescription {
-  background-color: rgba(231, 130, 169, 1);
-  /* Ensures padding does not affect width/height */
-}
-.showproduct {
-  display: flex;
-  height: 100vh; /* Full height of the viewport */
+  color: rgba(35, 50, 73, 1);
+  font-family: "Georgia", serif;
+  font-size: 18px;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 
-.productdescription {
-  background-color: rgba(231, 130, 169, 1); /* The background color you want */
-  width: 100%; /* Make it take full width */
-  height: 50vh; /* Half of the viewport height */
-  padding: 20px;
-  box-sizing: border-box; /* Ensure padding is included in the height/width calculation */
-}
-
-.productimage {
-  width: 100%; /* Make sure it takes full width */
-  height: 50vh; /* The other half of the viewport */
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.productdescription,
-.productimage {
-  margin-top: 10rem;
-}
-.productdescription {
-  padding: 2rem 2rem 2rem 2rem;
-}
-.productimage {
-  padding-left: 15rem;
-}
 a {
   margin-top: 2rem;
   padding: 1px 1px 1px 1px;
   color: white;
 }
-.specs {
-  /* font-family: Arial, sans-serif; */
-  margin-top: 20px;
-  font-family: var(--ff-secondary);
-}
-.specs .points {
-  color: black;
-  margin-bottom: 10px; /* Changes the color to blue */
-}
+
 .button-container {
   display: flex;
   justify-content: space-between;
-  gap: 10px; /* Add a gap between the buttons */
+  gap: 10px;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .button {
   display: inline-block;
-  flex: 1; /* Make the buttons take equal width */
-  max-width: 20%; /* Set maximum width */
-  padding: 10px 15px; /* Adjust padding */
+  flex: 1;
+  max-width: 20%;
+  padding: 10px 15px;
   background-color: rgba(35, 50, 73, 1);
   color: white;
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
-  margin: 28px; /* Add some space between buttons */
-  box-sizing: border-box; /* Include padding in the width calculation */
+  margin: 28px;
+  box-sizing: border-box;
   word-wrap: break-word;
 }
 
@@ -175,6 +141,9 @@ button:hover {
   margin-top: 9rem;
   margin-left: 7rem;
 }
+.info {
+  background-color: rgba(217, 217, 217, 1);
+}
 
 @media screen and (max-width: 1300px) {
   .showproduct {
@@ -198,5 +167,8 @@ button:hover {
   .button {
     flex: 1 0 100%; /* Buttons will take full width on small screens */
     max-width: none; /* Remove max width on small screens */
+  }
+  .description {
+    margin-left: -5px;
   }
 }

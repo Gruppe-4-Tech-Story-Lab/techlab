@@ -23,7 +23,8 @@ function hentData() {
 function showData(items) {
   const item = items[0];
   console.log(item);
-  document.querySelector(".name").textContent = item.produktnavn_og_model;
+  // document.querySelector(".name").textContent = item.produktnavn_og_model;
+  document.querySelector(".name").textContent = item.produktnavn;
   document.querySelector(".assetname").textContent = item.id;
   document.querySelector(".brand").textContent = item.brand;
   document.querySelector(".objectname").textContent = item.objektkode;
