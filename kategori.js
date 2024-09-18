@@ -9,7 +9,6 @@ if (category) {
   document.querySelector("h1").textContent = decodeURIComponent(category);
   console.log("Updated h1 with category:", decodeURIComponent(category)); // Debugging
 } else {
-  console.log("No category found in URL");
 }
 
 // Fetch request til Supabase
