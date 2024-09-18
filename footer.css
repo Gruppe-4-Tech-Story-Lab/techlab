@@ -7,7 +7,7 @@ footer {
   margin-top: 15rem;
 }
 .footer-kea {
-  margin-top: 6rem;
+  margin-top: 2.1rem;
   padding-left: 1rem;
 }
 .kea-vejledning {
@@ -31,18 +31,24 @@ h4 {
   font-size: 0.875rem;
   color: white;
   padding-left: 1rem;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 h5 {
   font-size: 0.875rem;
   color: white;
   padding-left: 1rem;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 h6 {
   font-size: 0.875rem;
   color: white;
   padding-left: 1rem;
+  margin-bottom: 6px;
+}
+a {
+  margin-top: 1rem;
+  padding: 1px 1px 1px 1px;
+  color: white;
 }
 @media (max-width: 600px) {
   footer {

@@ -83,7 +83,7 @@ img {
   max-width: 65%;
   height: auto;
 }
-.description {
+/* .description {
   font-weight: 400;
   text-align: center;
   padding: 20px;
@@ -93,7 +93,7 @@ img {
   background-color: rgba(231, 130, 169, 1);
   margin-bottom: 1rem;
   margin-left: 27px;
-}
+} */
 
 dt {
   color: rgba(35, 50, 73, 1);
@@ -112,7 +112,7 @@ dd {
 }
 
 a {
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 1px 1px 1px 1px;
   color: white;
 }
@@ -161,8 +161,30 @@ button:hover {
   margin-top: 9rem;
   margin-left: 7rem;
 }
-.info {
+/* .info {
   background-color: rgba(217, 217, 217, 1);
+} */
+.defined {
+  background-color: rgba(217, 217, 217, 1);
+  width: 50%;
+}
+.paragraph {
+  width: 50%;
+  font-weight: 400;
+  text-align: center;
+  padding: 30px 40px;
+  line-height: 1.6;
+
+  /* margin-top: 7rem; */
+  background-color: rgba(231, 130, 169, 1);
+  /* margin-bottom: 1rem;
+  margin-left: 27px; */
+}
+
+.test {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
 }
 
 @media screen and (max-width: 1300px) {
@@ -184,5 +206,16 @@ button:hover {
   }
   .dynamicpics {
     margin-left: 3rem;
+  }
+  .test {
+    flex-direction: column;
+  }
+  .defined {
+    width: 100%;
+  }
+  .paragraph {
+    width: 100%;
+    padding: 20px 20px;
+    /* margin-top: 2rem; */
   }
 }
