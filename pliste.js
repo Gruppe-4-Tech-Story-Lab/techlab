@@ -13,7 +13,7 @@ fetch(`https://hvqqqwpdmwotjgxebrxv.supabase.co/rest/v1/TSL?`, {
 function showProducts(products) {
 
 products.forEach(showProduct);
-}
+} 
 
 function showProduct(product) {
     console.log(product);
