@@ -27,6 +27,10 @@ p {
   color: white;
   font-weight: lighter;
 }
+img {
+  display: block;
+  max-width: 65%;
+}
 
 fieldset {
   border: none;
