@@ -1,32 +1,37 @@
-// Fetch request to Supabase to get all unique "type" values
-fetch("https://hvqqqwpdmwotjgxebrxv.supabase.co/rest/v1/TSLN", {
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get("category");
+const encoded = encodeURIComponent(category);
+console.log(encoded);
+
+// Fetch request to Supabase
+fetch(`https://hvqqqwpdmwotjgxebrxv.supabase.co/rest/v1/TSLN?category=eq.${encoded}`, {
   headers: {
     apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh2cXFxd3BkbXdvdGpneGVicnh2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjU2MDY4NzQsImV4cCI6MjA0MTE4Mjg3NH0.K9dKO1K4NQBdSCsqBZHh1Yc4L8VNHDBNgRCzsI0fSSQ",
   },
 })
-  .then((res) => res.json())
+ .then((res) => res.json())
   .then((data) => {
-    console.log(data); // Debug: See the fetched data
-
-    // Get all unique "type" values
-    const uniqueTypes = [...new Set(data.map((item) => item.type))];
-
-    // Display the unique "type" values on the page
-    vis(uniqueTypes);
-  })
-  .catch((error) => {
-    console.error("Fejl ved hentning af data:", error);
+    const uniqueProducts = new Set();
+    const filteredData = data.filter((item) => {
+      if (uniqueProducts.has(item.produktnavn)) {
+        return false;
+      } else {
+        uniqueProducts.add(item.produktnavn);
+        return true;
+      }
+    });
+    vis(filteredData.slice(0, 8));
   });
 
-// Function to display the data on the page
 function vis(data) {
-  const main = document.querySelector("main");
-  data.forEach((type) => {
-    const template = document.querySelector("#smallProductTemplate").content;
+  console.table(data); // Dette viser dataene i konsollen
+
+  data.forEach((item) => {
+    document.querySelector("h1").textContent = item.category;
+    const template = document.querySelector("template").content;
     const copy = template.cloneNode(true);
-
-    copy.querySelector("h3").textContent = type;
-
-    main.appendChild(copy);
+    copy.querySelector("h3").textContent = item.produktnavn;
+    copy.querySelector("img").src = "pimgs/" + item.asset_id + ".webp";
+    document.querySelector("main").appendChild(copy);
   });
 }
