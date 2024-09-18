@@ -24,10 +24,6 @@ header {
     text-decoration: none;
   }
 
-  nav img {
-    width: 20%;
-  }
-
   .header-tekst {
     color: white;
   }
@@ -123,7 +119,6 @@ header {
 @media (min-width: 600px) {
   nav {
     background-color: #233249;
-    padding: 20px;
     text-align: end;
   }
 
@@ -157,12 +152,13 @@ header {
 
   header h1 {
     font-size: 5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2cqb;
     color: #ffffff;
   }
 
   header h2 {
     color: #ffffff;
+    margin-top: 30px;
   }
 
   header p {
@@ -250,11 +246,11 @@ header {
   .buttons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 1rem; /* Reduce the gap size */
   }
-
   .buttons button {
     padding: 1.2rem;
+    width: 16rem;
     background-color: #ea5045;
     color: white;
     border: none;
@@ -276,10 +272,36 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 200%;
   }
 
   .description p {
     margin: 0;
     font-style: italic;
+  }
+
+  .logo {
+    width: 250px;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  header nav a.en {
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  .overskrift {
+    margin-left: 15px;
   }
 }
