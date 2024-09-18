@@ -1,7 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const category = urlParams.get("Type");
 
-
+ 
 // Fetch request til Supabase
 fetch(`https://hvqqqwpdmwotjgxebrxv.supabase.co/rest/v1/TSL?`, {
   headers: {
