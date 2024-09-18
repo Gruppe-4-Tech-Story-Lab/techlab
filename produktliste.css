@@ -129,6 +129,7 @@ h4 {
     display: flex;
     overflow: hidden;
     width: 100%;
+    flex-direction: row;
 }
 
 .card {
