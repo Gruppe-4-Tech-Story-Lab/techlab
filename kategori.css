@@ -4,11 +4,15 @@
             padding: 0;
             background-color: #f0f0f0;
                 background-color: white;
+                    font-family: "Roboto Condensed", sans-serif;;
         }
 
     header {
-    background-color: #233249;
-    
+    background-color: #233249;   
+}
+
+h1, p, h2, h3 {
+    font-family: "Roboto Condensed", sans-serif;;
 }
 
 @media(max-width: 600px) {
@@ -38,6 +42,7 @@
         display: flex;
         flex-direction: column; /* Ændret til kolonne-layout */
         align-items: center; /* Centrerer indholdet horisontalt */
+        background-color: #233249;
     }
 
     .header-text {
@@ -167,6 +172,7 @@ nav img  {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
+    background-color: #233249;
 }
 
 .header-tekst {
@@ -214,6 +220,7 @@ header p, h2, h1 img {
     margin-left: 50px;
     max-width: 600px;
     width: 100%; /* Set width to 100% to be responsive */
+     color: #233249;
 }
 
 .container {
