@@ -4,23 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product details</title>
-    <link rel="stylesheet" href="product.css">
+    <title>Formular</title>
+    <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="menu.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="footer.css">
-
-
 </head>
 
 <body>
+
+
     <!-- navbar -->
     <header>
         <div class="logo">
-            <a href="index.html">
+            <a href="product.html">
                 <img src="assets/workinglogo.png" alt="logomain"></a>
 
         </div>
@@ -40,50 +36,35 @@
         </nav>
     </header>
 
+    <form action="handleForm.php">
+        <h2>TILMELD NU</h2>
+        <p>"Udfyld formularen for mere info om tech gadgets hos Tech Lab & Story."</p>
+        <fieldset id="dataarea">
+            <!-- <legend>Your data</legend> -->
 
-    <section class="reserveBox">
-        <img src="assets/placeholder.jpg" alt="Sony DSLR-kameraer" class="dynamicpics">
+            <label for="email">Den KEA email</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required>
 
-        <div class="button-container">
-            <a href="form.html" class=" button"> Tilmeld HER</a>
+            <label for="psw">Kode</label>
+            <input type="password" id="psw" name="psw" placeholder="Enter Password" required>
 
-            <a href="https://kea.topdesk.net/tas/public/ssp/content/page/assetreservationplanner?assetType=&assetType=Camera+Lenses"
-                class="button">Se om produktet er ledigt HER</a>
-        </div>
+            <label for="psw-repeat">Gentag Kode</label>
+            <input type="password" id="psw-repeat" name="psw-repeat" placeholder="Repeat Password" required>
 
-    </section>
-
-    <section class="info">
-        <h2>Product Information</h2>
-        <div class="test">
-            <div class="defined">
-                <dl>
-                    <dt class="name">Model name</dt>
-                    <dd class="assetname"> ID</dd>
-                    <dt class="brand">mærke</dt>
-                    <dt class="objectname">Objekt kode</dt>
-                    <dd class="categoryname">Category</dd>
-                    <dt class="typeb">Taskonomi2</dt>
-                    <dd class="typec">Taskonomi3</dd>
-                </dl>
-            </div>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Husk mig
+            </label>
+        </fieldset>
 
 
-            <div class="paragraph">
-                <p class="description">Sony Alpha SLT-A58 er et spejlreflekskamera, som bruger Sonys “Translucent Mirror
-                    Technology”. Dette gør
-                    det anderledes
-                    end traditionelle DSLR-kameraer, fordi det har en fast, delvist gennemsigtig spejlmekanisme, hvilket
-                    gør
-                    autofokus
-                    hurtigere og mere præcis under både stillbillede- og videooptagelse! Udover dette, så har A58 har en
-                    APS-C sensor med
-                    20,1 megapixel, som leverer høj billedkvalitet, skarpe detaljer og god performance under forhold med
-                    lavt lys.</p>
-            </div>
-            <!-- <button>Reserve nu</button> -->
-        </div>
-    </section>
+        <fieldset id="button-area">
+            <legend>By creating an account, you agree to our Terms & conditions</legend>
+            <button type="button" class="cancelbtn"> Anuller</button>
+            <button type="reset" class="resetbtn">Reset formular</button>
+            <button type="submit" class="signupbtn">Tilmeld</button>
+
+        </fieldset>
+    </form>
 
     <footer>
         <div class="footer-kea">
@@ -132,6 +113,7 @@
         </div>
     </footer>
     <script src="menu.js"></script>
-    <script src="product.js"></script>
-
 </body>
+
+
+</html>

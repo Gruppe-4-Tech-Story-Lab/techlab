@@ -1,0 +1,125 @@
+/* General form styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+form {
+  max-width: 500px;
+  margin: 230px auto;
+  padding: 20px;
+  /* background-color: rgba(35, 50, 73, 1); */
+  background-color: rgba(231, 130, 169, 1);
+
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+p {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: white;
+  font-weight: lighter;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: white;
+}
+
+label {
+  display: block;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+button.signupbtn {
+  background-color: gray;
+  color: white;
+}
+
+button.resetbtn {
+  background-color: gray;
+  color: white;
+}
+
+button.cancelbtn {
+  background-color: gray;
+  color: white;
+}
+
+button:hover {
+  /* opacity: 0.9; */
+  color: rgba(231, 130, 169, 1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  form {
+    padding: 15px;
+  }
+
+  h1,
+  p {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    padding: 10px;
+  }
+
+  h1,
+  p {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 0.8rem;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+}
