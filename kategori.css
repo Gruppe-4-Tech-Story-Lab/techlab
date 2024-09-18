@@ -13,6 +13,7 @@
 
 h1, p, h2, h3 {
     font-family: "Roboto Condensed", sans-serif;;
+    color: white;
 }
 
 @media(max-width: 600px) {
@@ -80,15 +81,20 @@ h1, p, h2, h3 {
     header p {
         font-size: 1.2rem;
         line-height: 1.5;
+        
+    }
+    
+    p {
+        margin-left: 20px;
     }
 
     header p, h2, h1 {
-        margin-left: 50px;
+        margin-left: 20px;
         color: white;
     }
 
     .tech {
-        margin-left: 50px;
+        margin-left: 20px;
         max-width: 300px;
         width: 300px;
     }
@@ -274,6 +280,10 @@ header p, h2, h1 img {
 
 .button-link:hover {
     color: #0056b3; /* Change color on hover if desired */
+}
+
+p {
+    margin-left: 50px;
 }
 }
 
