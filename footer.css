@@ -1,0 +1,53 @@
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 30px;
+  background-color: rgba(35, 50, 73, 1);
+  margin-top: 15rem;
+}
+.footer-kea {
+  margin-top: 6rem;
+  padding-left: 1rem;
+}
+.kea-vejledning {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+.kea-info {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+h4 {
+  font-size: 0.875rem;
+  color: white;
+  padding-left: 1rem;
+  margin-bottom: 5px;
+}
+h5 {
+  font-size: 0.875rem;
+  color: white;
+  padding-left: 1rem;
+  margin-bottom: 5px;
+}
+h6 {
+  font-size: 0.875rem;
+  color: white;
+  padding-left: 1rem;
+}
+@media (max-width: 600px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: end;
+  }
+}
