@@ -25,11 +25,11 @@ function showData(items) {
   console.log(item);
   // document.querySelector(".name").textContent = item.produktnavn_og_model;
   document.querySelector(".name").textContent = item.produktnavn;
-  document.querySelector(".assetname").textContent = item.id;
+  document.querySelector(".assetname").textContent = item.Produktnavn;
   document.querySelector(".brand").textContent = item.brand;
-  document.querySelector(".objectname").textContent = item.objektkode;
-  document.querySelector(".categoryname").textContent = item.category;
-  document.querySelector(".typeb").textContent = item.taskonomi2;
-  document.querySelector(".typec").textContent = item.taskonomi3;
+  document.querySelector(".objectname").textContent = item.Taksonomi1;
+  document.querySelector(".categoryname").textContent = item.Type;
+  document.querySelector(".typeb").textContent = item.Taksonomi2;
+  document.querySelector(".typec").textContent = item.Taksonomi3;
   document.querySelector(".dynamicpics").setAttribute("src", `assets/${item.img}`);
 }
