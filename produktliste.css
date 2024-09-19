@@ -1,156 +1,166 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    .blaa {
-        background-color: #233249;
-        padding: 10px;
-    }
-
-    .pic {
-        display: none;
-    }
-
-    h1 {
-        color: #ffffff;
-        font-size: 70px;
-        font-family: "Roboto Condensed", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 600;
-        font-style: normal;
-    }
-
-    h2 {
-        color: #ffffff;
-        font-size: 30px;
-        font-family: "Roboto Condensed", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 300;
-        font-style: normal;
-    }
-
-    h4 {
-        font-size: 25px;
-        font-family: "Roboto Condensed", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 300;
-        font-style: normal;
-        color: #233249;
-        max-width: 50ch;
-        padding: 10px;
-    }
-    
-    .card {
-        flex: 0 0 25%;
-        text-align: center;
-        padding: 15px;
-        background-color: white;
-        margin: 0 30px ;
-    }
-    
-    .card img {
-        width: 100%;
-        height: auto;
-    }
-    
-    h3 {
-        margin: 10px 0;
-        font-family: "Roboto Condensed", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 25px;
-    }
-    
-    .more-btn {
-        background-color: #e65142;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-        border-radius: 10px;
-        font-family: "Roboto Condensed", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 20px;
-    }
-    
-    .carousel-btn {
-        display: none;
-    }
-
-@media(min-width: 600px) {
 .blaa {
+  background-color: #233249;
+  padding: 10px;
+}
+
+.pic {
+  display: none;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 70px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 30px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h4 {
+  font-size: 25px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: #233249;
+  max-width: 50ch;
+  padding: 10px;
+}
+
+.card {
+  flex: 0 0 25%;
+  text-align: center;
+  padding: 15px;
+  background-color: white;
+  margin: 0 30px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+h3 {
+  margin: 10px 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.more-btn {
+  background-color: #e65142;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.carousel-btn {
+  display: none;
+}
+a {
+  margin-top: 1rem;
+  padding: 1px 70px 70px 1px;
+  font-weight: bolder;
+}
+#orangeLink {
+  color: #e65142;
+  margin-top: 1rem;
+  padding: 1px 20px 20px 1px;
+}
+
+@media (min-width: 600px) {
+  .blaa {
     background-color: #233249;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0px;
-}
+  }
 
-.text {
+  .text {
     padding: 5%;
-}
+  }
 
-.pic {
+  .pic {
     margin-left: auto;
     display: block;
-}
+  }
 
-h1 {
+  h1 {
     font-size: 96px;
-}
+  }
 
-h2 {
+  h2 {
     color: #ffffff;
     font-size: 40px;
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-}
+  }
 
-h4 {
+  h4 {
     font-size: 35px;
     max-width: 50ch;
     padding-left: 3%;
     padding-top: 2%;
-}
+  }
 
-.carousel-container {
+  .carousel-container {
     display: flex;
     align-items: center;
     margin: 3%;
-}
+  }
 
-.carousel {
+  .carousel {
     display: flex;
     overflow: hidden;
     width: 100%;
     flex-direction: row;
-}
+  }
 
-.card {
+  .card {
     flex: 0 0 25%;
     text-align: center;
     padding: 15px;
     background-color: white;
-    margin: 0 30px ;
+    margin: 0 30px;
     transition: transform 0.3s ease;
-}
+  }
 
-.card img {
+  .card img {
     width: 100%;
     height: auto;
-}
+  }
 
-.more-btn:hover {
+  .more-btn:hover {
     background-color: #6b120c;
-}
+  }
 
-.carousel-btn {
+  .carousel-btn {
     display: block;
     background-color: white;
     border: none;
@@ -159,9 +169,9 @@ h4 {
     padding: 10px 14px 14px 14px;
     border-radius: 50%;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-}
+  }
 
-.carousel-btn:hover {
+  .carousel-btn:hover {
     background-color: #c2c0c0;
-} 
+  }
 }
