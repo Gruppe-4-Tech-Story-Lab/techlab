@@ -13,6 +13,8 @@ fetch(`https://hvqqqwpdmwotjgxebrxv.supabase.co/rest/v1/TSL?`, {
 function showProducts(products) {
 
 products.forEach(showProduct);
+console.log(products);
+
 } 
 
 function showProduct(product) {
@@ -21,23 +23,13 @@ function showProduct(product) {
     const template = document.querySelector("template").content;
     const copy = template.cloneNode(true);
 
-{/* <div class="card">
-        <img src="sonyalpha.png" alt="Sony Alpha SLT-158">
-        <h3>Sony Alpha SLT-158</h3>
-        <a href="product.html"><button class="more-btn">Læs mere</button></a>
-
-    </div> --> */}
-
     copy.querySelector("h3").textContent = product.Produktnavn;
     copy.querySelector("img").src = product.img;
-    copy.querySelector("a").innerHTML = product.id;
     copy.querySelector("a").setAttribute("href", `product.html?id=${product.id}`);
-
-    // copy.querySelector("img").src = product.`assets/${item.img}`;
 
 
     // append the template
-    document.querySelector("body").appendChild(copy);
+    document.querySelector(".carousel").appendChild(copy);
 
 
 }
